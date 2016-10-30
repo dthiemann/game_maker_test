@@ -10,12 +10,15 @@
     <sprite>sprites\sBullet</sprite>
     <sprite>sprites\sEnemy</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\b_background</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\oBullet</object>
     <object>objects\oEnemy</object>
+    <object>objects\oGame</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
