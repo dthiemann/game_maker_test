@@ -4,9 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\aPlayerDeath</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
+    <sprite>sprites\sPlayerChunk</sprite>
     <sprite>sprites\sBullet</sprite>
     <sprite>sprites\sEnemy</sprite>
   </sprites>
@@ -16,6 +19,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\oPlayer</object>
+    <object>objects\oPlayerChunk</object>
     <object>objects\oBullet</object>
     <object>objects\oEnemy</object>
     <object>objects\oGame</object>
