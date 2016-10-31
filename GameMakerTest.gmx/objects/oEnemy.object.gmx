@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 3
+            <string>speed = 90 / room_speed
 direction = random(360)
 </string>
           </argument>

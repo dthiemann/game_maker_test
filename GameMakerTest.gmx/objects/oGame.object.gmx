@@ -32,8 +32,8 @@ ScreenWidth = display_get_width()
 ScreenHeight = display_get_height()
 
 // How much of the room do we want on screen
-view_wview = ScreenWidth * 2 // multiply by 2 to see twice as much
-view_hview = ScreenHeight * 2
+view_wview = ScreenWidth // multiply by 2 to see twice as much
+view_hview = ScreenHeight
 
 // How much of screen do we want that to take up
 view_wport = ScreenWidth

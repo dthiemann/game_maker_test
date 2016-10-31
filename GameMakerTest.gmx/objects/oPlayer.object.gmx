@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>// Movement
 
-mySpeed = 10
+mySpeed = 300 / room_speed
 if keyboard_check(ord('W')) { 
     y = y - mySpeed
 }
@@ -50,9 +50,20 @@ if (mouse_check_button(mb_left)) {
     myBullet.direction = image_angle
     myBullet.speed = mySpeed * 2
     myBullet.image_angle = image_angle
+    
+    // Bullet kickback
+    kick = mySpeed / room_speed
+    kickDirection = image_angle + 180
+    
+    x = x + lengthdir_x(kick, kickDirection)
+    y = y + lengthdir_y(kick, kickDirection)
 }
 
-
+// Have player stay within room
+if (x &lt; 0) { x = 0 }
+if (x &gt; room_width) { x = room_width }
+if (y &lt; 0) { y = 0 }
+if (y &gt; room_height) { y = room_height }
 
 
 
