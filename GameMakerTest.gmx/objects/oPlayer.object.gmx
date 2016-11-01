@@ -68,16 +68,7 @@ if (y &gt; room_height) { y = room_height }
 // Death
 EnemyTouchingMe = instance_place(x, y, oEnemy)
 if instance_exists(EnemyTouchingMe) {
-    bitsCreatedSoFar = 0
-    bitFlingSpeed = 1500 / room_speed
-    
-    while oGame.numberOfBitsThePlayerIsMadeOf &gt; bitsCreatedSoFar  {
-        newBit = instance_create(x,y,oPlayerChunk)
-        bitsCreatedSoFar = bitsCreatedSoFar + 1
-    }
-    
-    audio_play_sound(aPlayerDeath,1,false)
-    instance_destroy()
+    ExplodeIntoANumberOfChunks(oGame.numberOfBitsThePlayerIsMadeOf, oPlayerChunk)
 }
 
 </string>

@@ -12,17 +12,27 @@
     <sprite>sprites\sPlayerChunk</sprite>
     <sprite>sprites\sBullet</sprite>
     <sprite>sprites\sEnemy</sprite>
+    <sprite>sprites\sExplodingEnemy</sprite>
+    <sprite>sprites\sExplodingEnemyChunk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_background</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\ExplodeIntoANumberOfChunks.gml</script>
+    <script>scripts\BounceOffWalls.gml</script>
+    <script>scripts\HitByProjectile.gml</script>
+  </scripts>
   <objects name="objects">
+    <object>objects\oGame</object>
     <object>objects\oPlayer</object>
     <object>objects\oPlayerChunk</object>
     <object>objects\oBullet</object>
+    <object>objects\oExplodingEnemyChunk</object>
+    <object>objects\oExplodingEnemy</object>
     <object>objects\oEnemy</object>
-    <object>objects\oGame</object>
+    <object>objects\oProjectile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
