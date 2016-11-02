@@ -6,6 +6,10 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\aPlayerDeath</sound>
+    <sound>sound\aReassemble</sound>
+    <sound>sound\aExplode</sound>
+    <sound>sound\aChunkArrive</sound>
+    <sound>sound\aShoot</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
@@ -25,14 +29,16 @@
     <script>scripts\HitByProjectile.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\oGame</object>
     <object>objects\oPlayer</object>
     <object>objects\oPlayerChunk</object>
     <object>objects\oBullet</object>
     <object>objects\oExplodingEnemyChunk</object>
     <object>objects\oExplodingEnemy</object>
-    <object>objects\oEnemy</object>
+    <object>objects\oShrinkingEnemy</object>
+    <object>objects\oMachineGun</object>
+    <object>objects\oGame</object>
     <object>objects\oProjectile</object>
+    <object>objects\oEnemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

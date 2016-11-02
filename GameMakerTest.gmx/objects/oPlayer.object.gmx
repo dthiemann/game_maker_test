@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>CurrentWeapon = instance_create(x,y,oMachineGun)
+CurrentWeapon.Owner = self.id
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -43,21 +67,6 @@ if keyboard_check(ord('D')) {
 
 // Facing
 image_angle = point_direction(x, y, mouse_x, mouse_y)
-
-// Shooting
-if (mouse_check_button(mb_left)) {
-    myBullet = instance_create(x, y, oBullet)    
-    myBullet.direction = image_angle
-    myBullet.speed = mySpeed * 2
-    myBullet.image_angle = image_angle
-    
-    // Bullet kickback
-    kick = mySpeed / room_speed
-    kickDirection = image_angle + 180
-    
-    x = x + lengthdir_x(kick, kickDirection)
-    y = y + lengthdir_y(kick, kickDirection)
-}
 
 // Have player stay within room
 if (x &lt; 0) { x = 0 }

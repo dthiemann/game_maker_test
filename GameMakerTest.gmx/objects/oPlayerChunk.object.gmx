@@ -75,10 +75,13 @@ if reassembling = false {
         if (InPosition = false) {
             oGame.BitsReassembled = oGame.BitsReassembled + 1
             InPosition = true
+            audio_play_sound(aChunkArrive, 1, false)
         }
         
         if (oGame.BitsReassembled &gt;= oGame.numberOfBitsThePlayerIsMadeOf) {
             instance_create(x,y,oPlayer)
+            audio_play_sound(aReassemble, 1, false)
+            
             with oPlayerChunk { instance_destroy() }
             oGame.BitsReassembled = 0
         }
