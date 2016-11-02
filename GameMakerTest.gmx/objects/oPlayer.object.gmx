@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>CurrentWeapon = instance_create(x,y,oMachineGun)
-CurrentWeapon.Owner = self.id
+            <string>
+
 </string>
           </argument>
         </arguments>
@@ -67,6 +67,13 @@ if keyboard_check(ord('D')) {
 
 // Facing
 image_angle = point_direction(x, y, mouse_x, mouse_y)
+
+// Pick up weapons
+WeaponTouching = instance_place(x,y,oMachineGun) 
+if instance_exists(WeaponTouching){
+    CurrentWeapon = WeaponTouching
+    CurrentWeapon.Owner = self.id
+}
 
 // Have player stay within room
 if (x &lt; 0) { x = 0 }

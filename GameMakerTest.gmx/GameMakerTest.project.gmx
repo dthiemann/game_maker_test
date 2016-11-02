@@ -18,6 +18,7 @@
     <sprite>sprites\sEnemy</sprite>
     <sprite>sprites\sExplodingEnemy</sprite>
     <sprite>sprites\sExplodingEnemyChunk</sprite>
+    <sprite>sprites\sMachineGun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_background</background>

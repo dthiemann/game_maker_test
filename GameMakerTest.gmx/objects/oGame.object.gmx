@@ -77,7 +77,17 @@ SecondsSinceLastEnemySpawn = SecondsSinceLastEnemySpawn + (1 / room_speed)
 
 if SecondsSinceLastEnemySpawn &gt;= SecondsBetweenEnemySpawns {
     // Spawn enemy
-    instance_create(random(room_width), random(room_height), choose(oShrinkingEnemy, oExplodingEnemy))    
+    SpawnX = 0
+    SpawnY = 0
+    if choose(true, false) {
+        SpawnX = random(room_width)
+        SpawnY = choose(0, room_height)
+    } else {
+        SpawnX = choose(0, room_width)
+        SpawnY = random(room_height)
+    }
+    
+    instance_create(SpawnX, SpawnY, choose(oShrinkingEnemy, oExplodingEnemy))    
     SecondsSinceLastEnemySpawn = 0
 }
 

@@ -61,6 +61,7 @@
     <instance objName="oExplodingEnemy" x="864" y="672" name="inst_29C085DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oExplodingEnemy" x="960" y="416" name="inst_7793F5BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oExplodingEnemy" x="736" y="96" name="inst_9BABA3A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oMachineGun" x="128" y="448" name="inst_54DE3431" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
