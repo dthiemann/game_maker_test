@@ -19,6 +19,7 @@
     <sprite>sprites\sExplodingEnemy</sprite>
     <sprite>sprites\sExplodingEnemyChunk</sprite>
     <sprite>sprites\sMachineGun</sprite>
+    <sprite>sprites\sSingleShotGun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_background</background>
@@ -28,6 +29,7 @@
     <script>scripts\ExplodeIntoANumberOfChunks.gml</script>
     <script>scripts\BounceOffWalls.gml</script>
     <script>scripts\HitByProjectile.gml</script>
+    <script>scripts\CanBePickedUp.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>
@@ -37,6 +39,7 @@
     <object>objects\oExplodingEnemy</object>
     <object>objects\oShrinkingEnemy</object>
     <object>objects\oMachineGun</object>
+    <object>objects\oSingleShotGun</object>
     <object>objects\oGame</object>
     <object>objects\oProjectile</object>
     <object>objects\oEnemy</object>

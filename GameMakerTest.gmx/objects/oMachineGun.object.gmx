@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Owner = noone
+            <string>depth = 10
+
+Owner = noone
 </string>
           </argument>
         </arguments>
@@ -53,25 +55,28 @@
     y = Owner.y
     image_angle = Owner.image_angle
     
-    // Shooting
-    if (mouse_check_button(mb_left)) {
-        myBullet = instance_create(x, y, oBullet)    
-        myBullet.direction = image_angle
-        myBullet.speed = 600 / room_speed
-        myBullet.image_angle = image_angle
-        
-        // Bullet kickback
-        kick = 300 / room_speed
-        kickDirection = image_angle + 180
-        
-        Owner.x = Owner.x + lengthdir_x(kick, kickDirection)
-        Owner.y = Owner.y + lengthdir_y(kick, kickDirection)
-        
-        audio_play_sound(aShoot, 1, false)
+    if Owner.Weapon[Owner.SelectedWeaponIndex] = self.id {
+    
+        // Shooting
+        if (mouse_check_button(mb_left)) {
+            myBullet = instance_create(x, y, oBullet)    
+            myBullet.direction = image_angle
+            myBullet.speed = 600 / room_speed
+            myBullet.image_angle = image_angle
+            
+            // Bullet kickback
+            kick = 300 / room_speed
+            kickDirection = image_angle + 180
+            
+            Owner.x = Owner.x + lengthdir_x(kick, kickDirection)
+            Owner.y = Owner.y + lengthdir_y(kick, kickDirection)
+            
+            audio_play_sound(aShoot, 1, false)
+        }
     }
 }
 
-
+CanBePickedUp()
 </string>
           </argument>
         </arguments>
